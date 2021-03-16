@@ -27,6 +27,7 @@ select {
     max-width: 100%;
     background: #111;
     font-size: 0.94em;
+    padding: 0.2em;
 }
 
 p.section-description {
