@@ -7,6 +7,13 @@
         $("select").each((i, el) => {
             score += Number($(el).val());
         });
+        if (score < 3 && $('select#format').val() === '0' && $('select#highlighting').val() === '2') {
+            // not harlowe, req'd syntax highlighting, always recommend Tweego
+            score = 3;
+        } else if ($('select#format').val() === '1' && $('select#highlighting').val() === '2') {
+            // is harlowe, syntax highlighting = no points ever
+            score -= 1;
+        }
         return score;
     }
 
