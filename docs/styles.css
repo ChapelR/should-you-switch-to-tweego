@@ -1,0 +1,48 @@
+main {
+    font-family: Georgia, Times New Roman, serif;
+    padding: 1em;
+    margin: 1em auto;
+    max-width: 888px;
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+section {
+    margin-top: 1.5em;
+    border-top: 1px dashed #111;
+}
+
+label {
+    display: block;
+    margin: auto;
+    margin: 1em 0;
+}
+
+select {
+    color: #eee;
+    display: block;
+    margin: 0 3em;
+    min-width: 15em;
+    max-width: 100%;
+    background: #111;
+    font-size: 0.94em;
+}
+
+p.section-description {
+    color: #111a;
+    font-style: italic;
+}
+
+p.section-description::before {
+    content: '\27A4\00a0';
+    font-style: normal;
+}
+
+#submit {
+    display: block;
+    margin: 1.5em auto;
+    min-width: 15em;
+    max-width: 100%;
+    cursor: pointer;
+}

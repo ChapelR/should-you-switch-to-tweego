@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Should you use Tweego?</title>
+  <meta name="description" content="Should you use Tweego, or stick to Twine?">
+  <meta name="author" content="Chapel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main role="main">
+        <h1>Should you switch to Tweego?</h1>
+
+        <p>Tweego is a powerful, feature rich compiler and tool for creating Twine games, but it is also a tool intended for power users. Learning to use Tweego itself can take time that would be better spent on just developing your game. You can use this tool to quickly determine whether Tweego is an appropriate choice for you or not.</p>
+
+        <p>Please note that this tool is designed to help people who are new to Twine and/or programming. If you're not in that category, you are better off making your own decisions based on the kind of workflow you expect.</p>
+
+        <section id="about-you">
+        <h2>About you.</h2>
+
+        <p class="section-description">Pick the option that best describes you and your team for each of the following questions.</p>
+
+        <label for="cli">How experienced are you using the command line (or the terminal/command prompt)?</label>
+        <select id="cli" name="cli">
+            <option value="-1">Don't know</option>
+            <option value="0">Inexperienced</option>
+            <option value="1">Somewhat experienced</option>
+            <option value="1">Very experienced</option>
+        </select>
+
+        <label for="team">Are you working with a team?</label>
+        <select id="team" name="team">
+            <option value="0">No/unsure</option>
+            <option value="1">Small team (2-3 people)</option>
+            <option value="2">Larger team(4+ people)</option>
+        </select>
+        </section>
+
+        <section id="about-project">
+        <h2>About your project.</h2>
+
+        <p class="section-description">Pick the option that best describes your project and workflow.</p>
+
+        <label for="format">Which story format will you be using?</label>
+        <select id="format" name="format">
+            <option value="-1">Harlowe</option>
+            <option value="0">SugarCube</option>
+            <option value="0">Snowman</option>
+            <option value="0">Chapbook</option>
+            <option value="0">Other</option>
+        </select>
+
+        <label for="size">How large will your project be?</label>
+        <select id="size" name="size">
+            <option value="0">Less than 500 passages</option>
+            <option value="1">500&ndash;1000 passages</option>
+            <option value="2">More than 1000 passages</option>
+        </select>
+
+        <label for="js">How much JavaScript do you expect to use in your project?</label>
+        <select id="js" name="js">
+            <option value="-1">None/unsure/very little</option>
+            <option value="0">A moderate amount</option>
+            <option value="1">A great deal</option>
+        </select>
+
+        <label for="tools">Do you need or want to use coding tools like transpilers, minifiers, or preprocessors on you JavaScript or CSS code?</label>
+        <select id="tools" name="tools">
+            <option value="0">No/unsure</option>
+            <option value="3">Yes</option>
+        </select>
+        </section>
+
+        <section id="about-features">
+        <h2>Other features/tools you want or need.</h2>
+
+        <p class="section-description">Rate the following features or tools based on how important they are to you.</p>
+
+        <label for="git">Git (or other VCS) support and ease of integration:</label>
+        <select id="git" name="git">
+            <option value="0">Don't know/no preference</option>
+            <option value="1">Preferred</option>
+            <option value="2">Required</option>
+        </select>
+
+        <label for="spellcheck">Spellcheck in the editor:</label>
+        <select id="spellcheck" name="spellcheck">
+            <option value="0">Don't know/no preference</option>
+            <option value="1">Preferred</option>
+            <option value="2">Required</option>
+        </select>
+
+        <label for="snippets">Autocomplete, snippets, etc:</label>
+        <select id="snippets" name="snippets">
+            <option value="0">Don't know/no preference</option>
+            <option value="1">Preferred</option>
+            <option value="2">Required</option>
+        </select>
+
+        <label for="highlighting">Syntax highlighting:</label>
+        <select id="highlighting" name="highlighting">
+            <option value="0">Don't know/no preference</option>
+            <option value="1">Preferred</option>
+            <option value="2">Required</option>
+        </select>
+        </section>
+        <section id="submit">
+            <button id="submit" role="button">Submit</button>
+            <p id="result">Press the submit button to see the recommendation.</p>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
