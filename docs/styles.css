@@ -39,6 +39,11 @@ p.section-description::before {
     font-style: normal;
 }
 
+p.whiner-warning {
+    color: #111a;
+    font-style: italic;
+}
+
 #submit {
     display: block;
     margin: 1.5em auto;
