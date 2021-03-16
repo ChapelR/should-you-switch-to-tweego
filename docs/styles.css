@@ -45,4 +45,10 @@ p.section-description::before {
     min-width: 15em;
     max-width: 100%;
     cursor: pointer;
+    padding: 0.3em;
+    font-size: 1em;
+}
+
+#result {
+    text-align: center;
 }
